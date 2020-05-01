@@ -1,0 +1,28 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Empty Rust Project</Name>
+    <Description>Default setup for Rust.</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Empty Rust Project</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+    <LanguageTag>Rust</LanguageTag>
+    <PlatformTag>Windows</PlatformTag>
+    <ProjectTypeTag>Desktop</ProjectTypeTag>
+
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="rust_template.vcxproj" File="rust_template.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">rust_template.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="main.rs">SRC\main.rs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="lib.rs">SRC\lib.rs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Cargo.toml">Cargo.toml</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
